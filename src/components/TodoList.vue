@@ -10,21 +10,21 @@
 </template>
 
 <script>
-import TodoItem from "./TodoItem.vue";
+import TodoItem from './TodoItem.vue';
 
 export default {
-  name: "TodoList",
+  name: 'TodoList',
   components: {
-    TodoItem,
+    TodoItem
   },
   props: {
-    todos: Array,
+    todos: Array
   },
   methods: {
     removeTodo(index) {
-      this.$emit("remove-todo", index);
-    },
-  },
+      this.$emit('remove-todo', index);
+    }
+  }
 };
 </script>
 
@@ -33,4 +33,3 @@ export default {
   width: 100%;
 }
 </style>
-x
